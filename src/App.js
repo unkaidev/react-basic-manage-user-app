@@ -5,6 +5,7 @@ import TableUsers from './components/TableUsers';
 import { ToastContainer, toast } from 'react-toastify';
 import Home from './components/Home';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Login from './components/Login';
 
 
 
@@ -21,6 +22,9 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/users" element={<TableUsers />} />
+            <Route path="/login" element={<Login />} />
+            {/* <Route path="/users" element={<TableUsers />} /> */}
+
           </Routes>
         </Container>
 
