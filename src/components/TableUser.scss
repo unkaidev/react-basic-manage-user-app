@@ -8,7 +8,7 @@
     }
 }
 .add-new {
-    display: flex;
+    // display: flex;
     align-items: center;
     justify-content: space-between;
 
@@ -19,6 +19,12 @@
             padding: 0 2px;
         }
     }
+  }
+  .customize-table{
+    width: inherit;
+    overflow-x: auto;
+  }
 
-
+  .pagination {
+    justify-content: center;
   }

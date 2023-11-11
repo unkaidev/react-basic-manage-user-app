@@ -1,8 +1,9 @@
 import { Routes, Route } from "react-router-dom";
 import Home from '../components/Home';
 import Login from '../components/Login';
-import PrivateRoute from "./PrivateRoute";
 import TableUsers from "../components/TableUsers";
+import PrivateRoute from "./PrivateRoute";
+import NotFound from "./NotFound";
 
 const AppRoutes = () => {
     return (
@@ -15,6 +16,8 @@ const AppRoutes = () => {
                         <TableUsers />
                     </PrivateRoute>
                 } />
+                <Route path="*" element={<NotFound />} />
+
             </Routes>
         </>
     )
