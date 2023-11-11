@@ -1,13 +1,10 @@
 import { Container } from 'react-bootstrap';
 import './App.scss';
 import Header from './components/Header';
-import TableUsers from './components/TableUsers';
 import { ToastContainer, toast } from 'react-toastify';
-import Home from './components/Home';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from './components/Login';
 import { useContext, useEffect } from "react";
 import { UserContext } from './context/UserContext';
+import AppRoutes from './routers/AppRoutes';
 
 
 
@@ -28,13 +25,7 @@ function App() {
 
         <Header />
         <Container>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/users" element={<TableUsers />} />
-            <Route path="/login" element={<Login />} />
-            {/* <Route path="/users" element={<TableUsers />} /> */}
-
-          </Routes>
+          <AppRoutes />
         </Container>
 
       </div>
