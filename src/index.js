@@ -16,11 +16,9 @@ ReactDOM.render(
   <Provider store={store}>
 
     <React.StrictMode>
-      <UserProvider>
-        <BrowserRouter>
-          <App />
-        </BrowserRouter>
-      </UserProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </React.StrictMode>
   </Provider>
   ,
