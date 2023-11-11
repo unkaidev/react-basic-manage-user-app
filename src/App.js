@@ -5,11 +5,15 @@ import { ToastContainer, toast } from 'react-toastify';
 import { useContext, useEffect } from "react";
 import { UserContext } from './context/UserContext';
 import AppRoutes from './routers/AppRoutes';
+import { useSelector } from 'react-redux';
 
 
 
 
 function App() {
+
+  const dataUserRedux = useSelector(state => state.user.account);
+  console.log(">>>redux ",dataUserRedux)
 
   const { user, loginContext } = useContext(UserContext);
 

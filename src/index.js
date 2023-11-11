@@ -7,18 +7,23 @@ import 'react-toastify/dist/ReactToastify.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { BrowserRouter } from 'react-router-dom';
 import { UserProvider } from './context/UserContext';
+import store from './redux/store';
+import { Provider } from 'react-redux';
 
 
 
 ReactDOM.render(
+  <Provider store={store}>
 
-  <React.StrictMode>
-    <UserProvider>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </UserProvider>
-  </React.StrictMode>,
+    <React.StrictMode>
+      <UserProvider>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </UserProvider>
+    </React.StrictMode>
+  </Provider>
+  ,
   document.getElementById('root')
 );
 
