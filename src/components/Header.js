@@ -11,8 +11,6 @@ import { handleLogoutRedux } from '../redux/actions/userAction';
 
 const Header = (props) => {
 
-
-
     const navigate = useNavigate();
     const user = useSelector(state => state.user.account);
     const dispatch = useDispatch();
