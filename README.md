@@ -1,6 +1,4 @@
----
-![Basic Manage Users App.png](Basic Manage Users App.png)
----
+![app.png](app.png)
 
 # Getting Started with Create React App
 
